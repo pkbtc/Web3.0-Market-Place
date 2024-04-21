@@ -5,7 +5,7 @@ import ABI from '../components/Abi.json'
 import Web3Context from '../context/Statecontext';
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
-
+import Products from './Products';
 const Addproducts = ({children}) => {
     const  navigate=useNavigate();
     const {account,setAccount,provider,setProvider,signer,setSigner,contract,setContract}=useContext(Web3Context);
@@ -15,7 +15,7 @@ const Addproducts = ({children}) => {
     const [productCost, setProductCost] = useState(0);
     const [productStock, setProductStock] = useState(0);
     const [productRating, setProductRating] = useState(0);
-    const [productId, setProductId] = useState(2);
+    const [productId, setProductId] = useState(3);
     const handleWallet=async()=>{
         if(window.ethereum==null){
             alert("please install metamask");
@@ -96,6 +96,7 @@ const Addproducts = ({children}) => {
 </div>
 
     <button onClick={() => navigate('/buy')}>Buy</button>
+    <button onClick={()=>navigate('/products')}>getProducts</button>
     </div>
   )
 }

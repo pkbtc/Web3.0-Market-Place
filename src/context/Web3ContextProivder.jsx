@@ -5,6 +5,7 @@ const Web3ContextProivder = ({children}) => {
     const [provider,setProvider]=useState(null);
     const [contract,setContract]=useState(null);
     const [signer,setSigner]=useState(null);
+    
   return (
     <Web3Context.Provider value={{account,setAccount,provider,setProvider,contract,setContract,signer,setSigner}}>{children}</Web3Context.Provider>
   )
