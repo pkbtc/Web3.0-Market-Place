@@ -6,6 +6,7 @@ import HandleWallet from './components/HandleWallet';
 import Products from './components/Products';
 import Home from './components/Home';
 import BuyProduct from './components/BuyProduct';
+import Withdraw from './components/Withdraw';
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
     {path:'/addproducts', element:<Addproducts/>},
     {path:'/buy', element:<BuyProduct/>},
     {path:'/products', element:<Products />},
+    {path:'/withdraw',element:<Withdraw/>}
 
 
     

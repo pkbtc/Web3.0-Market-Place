@@ -96,7 +96,9 @@ const Addproducts = ({children}) => {
 </div>
 
     <button onClick={() => navigate('/buy')}>Buy</button>
-    <button onClick={()=>navigate('/products')}>getProducts</button>
+    <button onClick={()=>navigate('/products')}>getProducts</button><br>
+    </br>
+    <button onClick={()=>navigate('/withdraw')}>Withdraw(Only For Owner)</button>
     </div>
   )
 }
